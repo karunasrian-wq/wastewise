@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WasteWise | Request Pickup</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        ♻ WasteWise
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="recycle.html">
+            Recycle
+        </a>
+
+        <a href="how.html">
+            How It Works
+        </a>
+
+        <a href="pickup.html" class="active">
+            Request Pickup
+        </a>
+
+    </nav>
+
+    <a href="pickup.html" class="nav-btn">
+        Get Pickup
+    </a>
+
+</header>
+
+
+<section class="page-hero pickup-hero">
+
+    <div>
+
+        <p>REQUEST A PICKUP</p>
+
+        <h1>
+            Let Us Take Care
+            <span>Of Your Waste</span>
+        </h1>
+
+        <p>
+            Fill the form and schedule your
+            waste collection.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="pickup-section">
+
+
+    <div class="pickup-info">
+
+        <h2>
+            ♻ Schedule Your Pickup
+        </h2>
+
+        <p>
+            Tell us what waste you have and
+            where we should collect it.
+        </p>
+
+        <div class="info-box">
+            🚛 Fast Doorstep Collection
+        </div>
+
+        <div class="info-box">
+            ♻ Responsible Recycling
+        </div>
+
+        <div class="info-box">
+            🌱 Eco-Friendly Process
+        </div>
+
+    </div>
+
+
+    <form id="pickupForm">
+
+
+        <label>
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+
+        <label>
+            Phone Number
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter phone number"
+            required
+        >
+
+
+        <label>
+            Pickup Address
+        </label>
+
+        <textarea
+            id="address"
+            placeholder="Enter complete address"
+            required
+        ></textarea>
+
+
+        <label>
+            Waste Type
+        </label>
+
+        <select id="waste" required>
+
+            <option value="">
+                Select waste type
+            </option>
+
+            <option>Paper</option>
+
+            <option>Plastic</option>
+
+            <option>Metal</option>
+
+            <option>E-Waste</option>
+
+            <option>Organic</option>
+
+            <option>Clothes</option>
+
+            <option>Glass</option>
+
+            <option>Rubber</option>
+
+        </select>
+
+
+        <label>
+            Pickup Date
+        </label>
+
+        <input
+            type="date"
+            id="date"
+            required
+        >
+
+
+        <label>
+            Additional Message
+        </label>
+
+        <textarea
+            id="message"
+            placeholder="Any additional information?"
+        ></textarea>
+
+
+        <button type="submit">
+            🚛 Request Pickup
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<div id="toast">
+    ✅ Pickup request submitted successfully!
+</div>
+
+
+<footer>
+
+    <h2>♻ WasteWise</h2>
+
+    <p>
+        Making waste management smarter.
+    </p>
+
+    <p>© <span id="year"></span> WasteWise</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
